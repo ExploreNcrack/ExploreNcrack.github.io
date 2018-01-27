@@ -44,7 +44,25 @@
             .fly-in-text.hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
             .fly-in-text.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
             
+            .btn{
+                color: #000;
             
+                border: #ccc 1px solid;
+                padding: 10px 15px;
+                border-radius: 8px;
+                display: block;
+                text-align: center;
+                line-height: 4em;
+            }
+           
+            .btn.hidden1 a {
+                display: :none;
+            }
+
+            .btn:hover{
+                color: #000;
+                border: #000 1px solid;
+            }
             
         </style>
     </head>
@@ -58,11 +76,12 @@
             <li>O</li>
             <li>M</li>
             <li>E</li>
-
-             
+    
 
         </ul>
         
+         <a href="AR_rotate_cube.html" class="btn hidden1">Rotating Cube</a>
+
        
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -72,9 +91,10 @@
                 
                 setTimeout(function() {
                     $('.fly-in-text').removeClass('hidden');
+                    $('.btn').removeClass('hidden1');
                 }, 500);
                 
-           
+                
             
         </script>
 

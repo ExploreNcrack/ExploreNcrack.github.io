@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>My first three.js app</title>
+		<style>
+			body { margin: 0; }
+			canvas { width: 100%; height: 100% }
+		</style>
+	</head>
+	<body>
+		
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
+		<script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+
+		<script>
+			//initialize the scene 
+			var scene = new THREE.Scene();
+			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+
+			var renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			document.body.appendChild( renderer.domElement );
+
+			//define the size 
+			var geometry = new THREE.BoxGeometry( 2, 2, 2);
+			var material = new THREE.MeshLambertMaterial( { color: 0x0546F5   } );
+			var cube = new THREE.Mesh( geometry, material );
+			//add cube
+			scene.add( cube );
+
+			// White directional light at half intensity shining from the top.
+			var directionalLight = new THREE.DirectionalLight( 0xffffff, 1 );
+
+			var directionalLight2 = new THREE.DirectionalLight( 0xffffff, 1 );
+
+
+			directionalLight.position.set(1,1,1);
+			directionalLight2.position.set(-1,-1,-1);
+
+			scene.add( directionalLight );
+			scene.add( directionalLight2 );
+
+
+
+
+
+			//ambient light 
+			//This light globally illuminates all objects in the scene equally.
+			//var light = new THREE.AmbientLight( 0x404040 ); // soft white light
+			//scene.add( light );
+
+			var controls = new THREE.OrbitControls( camera );
+
+			camera.position.z = 5;
+
+			controls.update();
+
+			var animate = function () {
+				requestAnimationFrame( animate );
+
+				//cube.rotation.x += 0.01;
+				cube.rotation.y += 0.1;
+				cube.rotation.z +=0.01;
+
+				controls.update();
+
+				renderer.render(scene, camera);
+			};
+
+			animate();
+		</script>
+	</body>
+</html>
