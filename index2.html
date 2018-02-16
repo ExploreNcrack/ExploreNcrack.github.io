@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Peter's Website</title>
         <style type="text/css">
             
@@ -46,18 +47,22 @@
             
             .btn{
                 color: #000;
-            
+                position: absolute;
+               margin:auto;
+                top: 45%;
+                left: 40%;
+                font-size: 1.5em;
                 border: #ccc 1px solid;
-                padding: 10px 15px;
+                padding: 10px 100px;
                 border-radius: 8px;
-                display: block;
+                display: none;
                 text-align: center;
-                line-height: 4em;
+                box-shadow: 4px 4px 4px #999;
+                line-height: 50px;
+
             }
            
-            .btn.hidden1 a {
-                display: :none;
-            }
+          
 
             .btn:hover{
                 color: #000;
@@ -68,7 +73,7 @@
     </head>
     <body>
 
-        <ul class="fly-in-text hidden">
+        <ul id ="welcome" class="fly-in-text hidden">
             <li>W</li>
             <li>E</li>
             <li>L</li>
@@ -80,7 +85,8 @@
 
         </ul>
         
-         <a href="AR_rotate_cube.html" class="btn hidden1">Rotating Cube</a>
+        
+        <a href="AR_rotate_cube.html" id="rotate_cube" class="btn" >Rotating Cube</a>
 
        
         
@@ -88,12 +94,23 @@
         <script type="text/javascript">
             
             
-                
+            
                 setTimeout(function() {
                     $('.fly-in-text').removeClass('hidden');
-                    $('.btn').removeClass('hidden1');
                 }, 500);
+
+                setTimeout(function() {
+                    $("#welcome").fadeOut("slow");
+
+                    }, 4000);
+
+                setTimeout(function() {
+                    document.getElementById('welcome').setAttribute("hidden", true);
+                    $('#rotate_cube').fadeIn("slow");
+
+                    }, 5000);
                 
+
                 
             
         </script>

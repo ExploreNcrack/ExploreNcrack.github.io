@@ -1,5 +1,7 @@
 <html>
 	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>My first three.js app</title>
 		<style>
 			body { margin: 0; }
@@ -22,6 +24,11 @@
 			document.body.appendChild( renderer.domElement );
 
 			//define the size 
+
+			var x=2;
+			var y=2;
+			var z=2;
+
 			var geometry = new THREE.BoxGeometry( 2, 2, 2);
 			var material = new THREE.MeshLambertMaterial( { color: 0x0546F5   } );
 			var cube = new THREE.Mesh( geometry, material );
@@ -61,6 +68,9 @@
 				//cube.rotation.x += 0.01;
 				cube.rotation.y += 0.1;
 				cube.rotation.z +=0.01;
+
+				
+
 
 				controls.update();
 
