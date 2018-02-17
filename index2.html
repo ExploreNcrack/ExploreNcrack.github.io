@@ -18,12 +18,12 @@
          
 
            
-            section {
+            .sec1 {
                color: black;
                        font-family: Open Sans, Arial;
                        font-weight: 300;
                        font-size: 3.5em;
-                       color: #000;
+                       
                       
                        position: absolute;
                        top: 50%;
@@ -64,20 +64,29 @@
             .fly-in-text.hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
             .fly-in-text.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
             
+
+            .sec2{
+                position: absolute;
+                       top: 50%;
+                      
+                       left: 50%;
+                       
+                       transform: translate(-50%, -50%) 
+            }
+
+
             .btn{
                 color: #000;
-                position: absolute;
-               margin:auto;
-                top: 45%;
-                left: 40%;
+                
+                
+               
                 font-size: 1.5em;
                 border: #ccc 1px solid;
                 padding: 10px 100px;
                 border-radius: 8px;
-                display: none;
-                text-align: center;
+                
                 box-shadow: 4px 4px 4px #999;
-                line-height: 50px;
+               
 
             }
            
@@ -105,14 +114,15 @@
         </ul>
         
 
-        <section id="me"  hidden>
+        <section id="me" class="sec1"  hidden>
             <p>This is Peter Liang's Website</p>
 
         </section>
         
         
+        <section id="button1" class="sec2" hidden>
         <a href="AR_rotate_cube.html" id="rotate_cube" class="btn" >Rotating Cube</a>
-
+        </section>
        
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -142,7 +152,7 @@
 
                 setTimeout(function() {
                     document.getElementById('welcome').setAttribute("hidden", true);
-                    $('#rotate_cube').fadeIn("slow");
+                    $('#button1').fadeIn("slow");
 
                     }, 8000);
                 
