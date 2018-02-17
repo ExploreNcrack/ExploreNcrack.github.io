@@ -14,6 +14,25 @@
             body {
                 background-color: #fff;
             }
+
+         
+
+           
+            section {
+               color: black;
+                       font-family: Open Sans, Arial;
+                       font-weight: 300;
+                       font-size: 3.5em;
+                       color: #000;
+                      
+                       position: absolute;
+                       top: 50%;
+                      
+                       left: 50%;
+                       
+                       transform: translate(-50%, -50%) 
+            }
+
             .fly-in-text {
                 list-style: none;
                 position: absolute;
@@ -85,6 +104,12 @@
 
         </ul>
         
+
+        <section id="me"  hidden>
+            <p>This is Peter Liang's Website</p>
+
+        </section>
+        
         
         <a href="AR_rotate_cube.html" id="rotate_cube" class="btn" >Rotating Cube</a>
 
@@ -105,10 +130,21 @@
                     }, 4000);
 
                 setTimeout(function() {
+                    $("#me").fadeIn("slow");
+
+                    }, 5000);
+
+                setTimeout(function() {
+                    $("#me").fadeOut("slow");
+
+                    }, 7000);
+
+
+                setTimeout(function() {
                     document.getElementById('welcome').setAttribute("hidden", true);
                     $('#rotate_cube').fadeIn("slow");
 
-                    }, 5000);
+                    }, 8000);
                 
 
                 
