@@ -1,28 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Peter's Webpage</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="particles-js">
-        <div class="btext">
-            <h1>Possibilities</h1>
-            <p>The possibilities are never ending</p>
-            <a href="index2.html" class="btn">Open Up New Possibilities</a>
-        </div>
-    </div>
+   <head>
+      <title>CISD</title>
+      <meta name="author" content="Zhaozhen(Peter) Liang">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="CISD Website">
+      <!-- Define keywords for search engines: -->
+      <meta name="keywords" content="UA,CISD,club">
+      <!-- css file link -->
+      <link rel="stylesheet" type="text/css" href="./CSS/HomePage.css">
+      
+      <!--Google Fonts-->
+      <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900' rel='stylesheet' type='text/css'>
+      <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lobster|Pacifico|Open+Sans|Montserrat|Calligraffitti|Ubuntu:500|Inconsolata" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <!-- greensock -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+     
+   </head>
+   <!-- main content -->
+   <body>
+      <div class="overlay">
+        <h1>Chinese International Society Development</h1>
+      </div>
+      
+      <header>
+         <!-- Navbar -->
+         <nav>
+            <div id="navigation" class="row clearfix">
+               <h2 class="logo">CISD</h2>
+               <ul class="main-nav">
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#event">Event</a></li>
+                   <li><a href="#contact">Contact</a></li>
+                   <li><a href="#activity">Activity</a></li>
+               </ul> 
+            </div>
+         </nav>
+         <!-- home page title -->
+         <div class="main-content-header">
+            <div id="header_title">
+            <h1> Welcome to <span>CISD</span><br>
+                  It's nice to meet you </h1>
+            </div>
+            <a id="join_button" href="#" class="btn btn-full">JOIN US</a>
+            <a href="#" class="btn btn-nav" id="about_button">ABOUT</a>
+         </div>
+      </header>
+      <!-- About Section -->
+      <section id="about" class="about_dec">
+          <div id="about-part1" class="about-part1-dec">
+            <div class="about-part1-pic-div">
+              <h1 class="section-title">About Us</h1>
+              <div class="inner-pic">
+              <img src="./Image/sample.jpg" alt="Table Setting" width="400" height="500" class="about-part1-pic">
+              </div>
+              <div class="inner-pic-2">
+              <img src="./Image/black.jpg" alt="Table Setting" width="400" height="500" >
+              </div>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-    <script>
-        particlesJS.load('particles-js', 'particles.json',
-        function(){
-            console.log('particles.json loaded...')
+            </div>
+            <div class="about-part1-content">
+              <div class="inner-part1-content">
+                <!-- <h1>CISD</h1>
+                <h3>Chinese International Students Developement Society</h3>
+                <br> -->
+                <p class="paragraph">CISD is a bridge between students and local communities to facilitate meaningful interactions and relationships. Our purpose is to learn from the community, explore the potential of students, enrich the students’ experience in Canadian society, and work towards common development between students and society.</p>
+              </div>
+            </div>
+          </div>
+          <div id="about-part2" class="about-part2-dec">
+            <div>
+              <h1>Our Story</h1>
+              <br>
+              <br>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div>
+              <img src="" alt="" width="" height="" class="">
+            </div>
+          </div>
+      </section>
+      <!-- Upcoming Event Section -->
+      <section>
+
+      </section>
+      <!-- We Offer Section -->
+      <section>
+
+      </section>
+      <!-- Sponsors Section -->
+      <!-- <section>
+
+      </section> -->
+      <!-- Contact Section -->
+      <section>
+
+      </section>
+      <!-- Footer Section -->
+      <footer>
+
+      </footer>
+      <!-- Javascript -->
+      <script type="text/javascript">
+        $(window).on('scroll', function(){
+          if($(window).scrollTop()>=50){
+            $('#navigation').addClass('nav_black');
+          }
+          if($(window).scrollTop()<50){
+            $('#navigation').removeClass('nav_black'); 
+          }
+        });
+        
+        TweenMax.to(".overlay h1", 3, {
+              opacity: 0,
+              y: -60,
+              ease: Expo.easeInOut
         })
-    </script>
-</body>
+
+        TweenMax.to(".overlay", 3, {
+              delay: 1,
+              top: "-100%",
+              ease: Expo.easeInOut
+        })
+      </script>
+   </body>
 </html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Peter's Website</title>
+        <link rel="stylesheet" type="text/css" href="normalize.css" />
+        <style type="text/css">
+            
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background-color: #fff;
+            }
+
+         
+
+           
+            .sec1 {
+               color: black;
+                       font-family: Open Sans, Arial;
+                       font-weight: 300;
+                       font-size: 3.5em;
+                       
+                      
+                       position: absolute;
+                       top: 50%;
+                      
+                       left: 50%;
+                       
+                       transform: translate(-50%, -50%) 
+            }
+
+            .fly-in-text {
+                list-style: none;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+            .fly-in-text li {
+                display: inline-block;
+                margin-right: 50px;
+                font-family: Open Sans, Arial;
+                font-weight: 300;
+                font-size: 4em;
+                color: #000;
+                opacity: 1;
+                transition: all 2.5s ease;
+            }
+            .fly-in-text li:last-child {
+                margin-right: 0;
+            }
+            .fly-in-text.hidden li {
+                opacity: 0;
+            }
+            .fly-in-text.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
+            .fly-in-text.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
+            .fly-in-text.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+            .fly-in-text.hidden li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
+            .fly-in-text.hidden li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
+            .fly-in-text.hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
+            .fly-in-text.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
+            
+
+            .sec2{
+                position: absolute;
+                       top: 50%;
+                      
+                       left: 50%;
+                       
+                       transform: translate(-50%, -50%) 
+            }
+
+
+            .btn{
+                color: #000;
+                
+                
+               
+                font-size: 1em;
+                border: #ccc 1px solid;
+                padding: 10px 30px;
+                border-radius: 8px;
+                
+                box-shadow: 4px 4px 4px #999;
+               
+
+            }
+           
+          
+
+            .btn:hover{
+                color: #000;
+                border: #000 1px solid;
+            }
+
+
+            .content {
+                position: relative;
+                min-height: 65vh;
+                padding: 15vh 0 0;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="large-header" class="large-header">
+            <canvas id="demo-canvas"></canvas>
+            
+        </div>
+        <ul id ="welcome" class="fly-in-text hidden">
+            <li>W</li>
+            <li>E</li>
+            <li>L</li>
+            <li>C</li>
+            <li>O</li>
+            <li>M</li>
+            <li>E</li>
+    
+
+        </ul>
+        
+
+        <section id="me" class="sec1"  hidden>
+            <p>This is Peter Liang's Website</p>
+
+        </section>
+        
+        <section id="wavebg" class="content"></section>
+
+        
+        <section id="button1" class="sec2" hidden>
+        <a href="AR_rotate_cube.html" id="rotate_cube" class="btn" >Rotating Cube</a>
+        </section>
+       
+        <script src="js/siriwave.js"></script>
+         <script src="js/TweenLite.min.js"></script>
+        <script src="js/EasePack.min.js"></script>
+        <script src="js/rAF.js"></script>
+        <script src="js/demo-3.js"></script>
+        
+        <script src="js/helper.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+                var siriWave = new SiriWave({
+                    container: document.getElementById('wavebg'),
+                    //cover: true,
+                    speed: 0.01,
+                    color: '#4d61c5',
+                    frequency: 4,
+                    amplitude: 1,
+                    autostart: true
+                });
+            
+                setTimeout(function() {
+                    $('.fly-in-text').removeClass('hidden');
+                }, 500);
+
+                setTimeout(function() {
+                    $("#welcome").fadeOut("slow");
+
+                    }, 4000);
+
+                setTimeout(function() {
+                    $("#me").fadeIn("slow");
+
+                    }, 5000);
+
+                setTimeout(function() {
+                    $("#me").fadeOut("slow");
+
+                    }, 7000);
+
+
+                setTimeout(function() {
+                    document.getElementById('welcome').setAttribute("hidden", true);
+                    $('#button1').fadeIn("slow");
+
+                    }, 8000);
+                
+
+                
+            
+        </script>
+
+    </body>
+</html>
