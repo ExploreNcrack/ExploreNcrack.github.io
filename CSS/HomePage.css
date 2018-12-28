@@ -1,16 +1,13 @@
 /* making the website to be full page */
 * {
-	box-sizing: border-box;
-
-}
-
-
-body{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
 	font-size: 20px;
 	overflow-x: hidden;
-	width: 100%;
 }
 
 .overlay{
@@ -44,7 +41,7 @@ body{
 	/* padding-top:64px!important;
 	padding-bottom:64px!important; */
 	text-align: center!important;
-	width:100%;
+	width:auto;
 	font-family: 'Open Sans', sans-serif;
 	height: 200vh;
 	position: relative;
@@ -53,6 +50,11 @@ body{
 	background-color: #363dc2;
 	margin-left:auto;
 	margin-right:auto;
+}
+
+.about-pic{
+	width: 125%;
+	height: 400px;
 }
 
 .about-part1-dec{
@@ -339,8 +341,9 @@ header{
 
 
 .main-content-header{
+	color: white;
 	font-family: 'Ubuntu', sans-serif;
-	width: 100%;
+	width: 1180px;
 	position: absolute;
 	/* border: 1px solid red; */
 	top: 55%;
@@ -393,23 +396,3 @@ h1{
 
 
 
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-
-@media screen and (max-width: 800px) {
-	.leftcolumn,
-	.rightcolumn {
-		width: 100%;
-		padding: 0;
-	}
-}
-
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-
-@media screen and (max-width: 400px) {
-	.topnav a {
-		float: none;
-		width: 100%;
-	}
-}
