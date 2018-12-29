@@ -32,12 +32,12 @@ body{
       text-transform: uppercase;
       color: black;
       transform: translate(-50%, -50%);
-      font-size: 25px;
+      font-size: 48%;
       text-align: center;
       font-weight: bolder;
-      letter-spacing: 5px;
+      letter-spacing: 2px;
       width: max-content;
-}
+	}
 
 /* About section */
 .about_dec{
@@ -395,21 +395,7 @@ h1{
 
 
 /*********Fit screen adjustment**************/
-@media only screen and (max-width: 400px) {
-	.overlay h1 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      text-transform: uppercase;
-      color: black;
-      transform: translate(-50%, -50%);
-      font-size: 48%;
-      text-align: center;
-      font-weight: bolder;
-      letter-spacing: 2px;
-      width: max-content;
-	}
-}
+
 
 
 
