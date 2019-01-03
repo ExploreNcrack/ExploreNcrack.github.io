@@ -14,12 +14,13 @@ body{
 	overflow-x: hidden;
 	width: 100%;
 	height: 100%;
+	color: white;
 }
 
 
 header{
 	width: 100%;
-	background: #72B0BD;
+	background: #F38181;
 	/* background-image: linear-gradient(rgba(0, 170, 255, 0.6), rgba(0, 0, 0, 0.5)),url('../../Image/bg4.jpg'); */
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -114,17 +115,14 @@ header{
 
 /* About section */
 .about_dec{
-	background: #5CA3B3;
+	background: #fce38a;
+	color: black;
 	z-index: -1;
 	/* padding-top:64px!important;
 	padding-bottom:64px!important; */
 	width:100%;
-	font-family: 'Open Sans', sans-serif;
 	height: 80vh;
 	position: relative;
-	color: black;
-	margin-left:auto;
-	margin-right:auto;
 }
 
 .about-left{
@@ -205,12 +203,64 @@ header{
 	width: 100%;
 }
 
+
+.offer_dec{
+	background: #fce38a;
+	font-family: 'Oswald', sans-serif;
+	color: black;
+	z-index: -1;
+	/* padding-top:64px!important;
+	padding-bottom:64px!important; */
+	width:100%;
+	height: 80vh;
+	position: relative;
+}
+
+.center2{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
 .upcoming_dec{
-	background: #4797A8;
+	font-family: 'Oswald', sans-serif;
+	color: black;
+	background: #eaffd0;
 	position: relative;
 	z-index: -1;
 	height: 80vh;
 	width: 100%;
+}
+
+.upcoming-title{
+	position: relative;
+	width: 100%;
+	height: 30vh;
+}
+
+.upcoming-title h1{
+	letter-spacing: 5px;
+	word-spacing: 10px;
+	font-size: 66px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.underline2{
+	position: absolute;
+	height: 5px;
+	width: 100px;
+	background: red;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 
 footer{
@@ -218,7 +268,7 @@ footer{
 	width: 100%;
 	height: 20vh;
 	position: relative;
-	background: #2D8C9E;
+	background: #95e1d3;
 }
 
 .footer-title{

@@ -44,7 +44,7 @@
 				{value: 1, duration: 150, easing: 'linear'}
 			],
 			color: {
-				value: '#ff963b',
+				value: '#000',
 				duration: 1,
 				delay: (t,i,l) => i*15+150
 			}
@@ -69,7 +69,7 @@
 				{value: 1, duration: 150, easing: 'linear'}
 			],
 			color: {
-				value: '#000',
+				value: '#fff',
 				duration: 1,
 				delay: (t,i,l) => (l-i-1)*15+150
 			}
@@ -91,7 +91,7 @@
 				{value: 1, duration: 150, easing: 'linear'}
 			],
 			color: {
-				value: '#ff963b',
+				value: '#000',
 				duration: 1,
 				delay: (t,i,l) => i*15+150
 			}
@@ -116,7 +116,7 @@
 				{value: 1, duration: 150, easing: 'linear'}
 			],
 			color: {
-				value: '#000',
+				value: '#fff',
 				duration: 1,
 				delay: (t,i,l) => (l-i-1)*15+150
 			}
@@ -138,7 +138,7 @@
 				{value: 1, duration: 150, easing: 'linear'}
 			],
 			color: {
-				value: '#ff963b',
+				value: '#000',
 				duration: 1,
 				delay: (t,i,l) => i*15+150
 			}
@@ -163,7 +163,7 @@
 				{value: 1, duration: 150, easing: 'linear'}
 			],
 			color: {
-				value: '#000',
+				value: '#fff',
 				duration: 1,
 				delay: (t,i,l) => (l-i-1)*15+150
 			}
@@ -185,7 +185,7 @@
 				{value: 1, duration: 150, easing: 'linear'}
 			],
 			color: {
-				value: '#ff963b',
+				value: '#000',
 				duration: 1,
 				delay: (t,i,l) => i*15+150
 			}
@@ -210,7 +210,7 @@
 				{value: 1, duration: 150, easing: 'linear'}
 			],
 			color: {
-				value: '#000',
+				value: '#fff',
 				duration: 1,
 				delay: (t,i,l) => (l-i-1)*15+150
 			}
@@ -232,8 +232,8 @@
 			$('#navigation').removeClass('nav_black'); 
 			$('#navul').css({ "margin-top" : "35px" });
 			$('#navlogo').css({ "margin-top" : "35px" });
-			$('#navigation').css({ "color" : "black" });
-			$("ul li a").css({ "color" : "black" });
+			$('#navigation').css({ "color" : "white" });
+			$("ul li a").css({ "color" : "white" });
 							
 					}
 		        });
