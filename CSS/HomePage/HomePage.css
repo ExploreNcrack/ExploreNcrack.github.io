@@ -19,7 +19,7 @@ body{
 
 header{
 	width: 100%;
-	background: yellow;
+	background: #72B0BD;
 	/* background-image: linear-gradient(rgba(0, 170, 255, 0.6), rgba(0, 0, 0, 0.5)),url('../../Image/bg4.jpg'); */
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -114,7 +114,7 @@ header{
 
 /* About section */
 .about_dec{
-	background: lightblue;
+	background: #5CA3B3;
 	z-index: -1;
 	/* padding-top:64px!important;
 	padding-bottom:64px!important; */
@@ -134,21 +134,51 @@ header{
 	position: relative;
 }
 
-.section-title{
+.section-title-1{
 	position: absolute;
 	text-align: left;
 	text-transform: uppercase;
 	letter-spacing: 10px;
-	top: 30%;
+	top: 25%;
 	left: 40%;
 	transform: translate(-50%,-50%);
-	font-size: 100px;
-	width: min-content; 
-	font-family: 'Ubuntu', sans-serif;
+	font-size: 150px;
+	font-family: 'Oswald', sans-serif;
 }
 
-.last-word{
-	border-bottom: 5px solid red;
+.section-title-2{
+	position: absolute;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	top: 45%;
+	left: 40%;
+	transform: translate(-58%,-50%);
+	font-size: 150px;
+	font-family: 'Oswald', sans-serif;
+}
+
+.section-title-3{
+	position: absolute;
+	text-align: left;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	top: 65%;
+	left: 40%;
+	transform: translate(-79%,-50%);
+	font-size: 150px;
+	font-family: 'Oswald', sans-serif;
+}
+
+
+.underline{
+	position: absolute;
+	height: 5px;
+	width: 100px;
+	top: 80%;
+	left: 30%;
+	border-radius: 50px;
+	transform: translate(-65%,-50%);
+	background: red;
 }
 
 
@@ -159,7 +189,9 @@ header{
 	position: relative;
 }
 
+
 .center{
+	width: 90%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -167,22 +199,26 @@ header{
 }
 
 .paragraph{
+	font-family: 'Oswald', sans-serif;
 	text-align: left;
+	font-size: 40px;
 	width: 100%;
 }
 
 .upcoming_dec{
-	background: orange;
+	background: #4797A8;
 	position: relative;
+	z-index: -1;
 	height: 80vh;
 	width: 100%;
 }
 
 footer{
+	z-index: -1;
 	width: 100%;
 	height: 20vh;
 	position: relative;
-	background: #0D0E2F;
+	background: #2D8C9E;
 }
 
 .footer-title{
