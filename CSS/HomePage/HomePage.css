@@ -15,21 +15,75 @@ body{
 	width: 100%;
 	height: 100%;
 	color: white;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 
 header{
+	z-index: 50;
 	width: 100%;
-	background: #F38181;
+	background: #fff;
 	/* background-image: linear-gradient(rgba(0, 170, 255, 0.6), rgba(0, 0, 0, 0.5)),url('../../Image/bg4.jpg'); */
-	background-size: cover;
+	/* background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center; */
 	height: 100vh;
 	position: relative;
 	opacity: 0.9;
 	/*parallax*/
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
+}
+
+.arrow-pre{
+	position: absolute;
+	top: 50%;
+	z-index: 59;
+	cursor: pointer;
+	left: 50px;
+	height: auto;
+	width: auto;
+}
+
+.arrow-pre svg, .arrow-next svg{
+	height: 100px;
+	width: 60px;
+	padding: 2px;
+	fill: white;
+}
+
+.arrow-pre:hover.previous{
+	-webkit-transition: -webkit-transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	        transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	-webkit-transform: translate3d(-15px, 5px, 0);
+	        transform: translate3d(-15px, 5px, 0);
+}
+
+.arrow-pre,.arrow-next{
+	-webkit-transition: -webkit-transform 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+	        transition: transform 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.arrow-next:hover.next{
+	-webkit-transition: -webkit-transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	        transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	-webkit-transform: translate3d(15px, 5px, 0) rotate(180deg);
+          	transform: translate3d(15px, 5px, 0) rotate(180deg);
+}
+
+.arrow-next{
+	position: absolute;
+	top: 50%;
+	z-index: 59;
+	cursor: pointer;
+	right: 50px;
+	height: auto;
+	width: auto;
+}
+
+.next{
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg) translate(0, 6px);
 }
 
 
@@ -39,6 +93,8 @@ header{
 }
 
 .header_title{
+	-webkit-font-smoothing: auto;
+	-moz-osx-font-smoothing: grayscale;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -51,7 +107,7 @@ header{
 	font-family: 'Oswald', sans-serif;
 	letter-spacing: 5px;
 	font-weight: 400;
-	font-size: 285px;
+	font-size: 287px;
 	text-align: center;
 }
 
@@ -60,6 +116,10 @@ header{
 	top: 66%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.title1{
+
 }
 
 .theme{
@@ -112,6 +172,110 @@ header{
 .click1 span, .click2 span, .click3 span, .click4 span {
 	display: inline-block;
 }
+
+.about-section{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+	color: black;
+}
+
+.left-about{
+	position: relative;
+	float: left;
+	width: 53%;
+	height: 100%;
+	z-index: -1;
+}
+
+.left-about-1{
+	opacity: 0;
+	z-index: 1;
+	position: absolute;
+	top: -100%;
+	width: 100%;
+	height:100%;
+}
+
+.left-about-2{
+	opacity: 0;
+	z-index: 2;
+	position: absolute;
+	top: -100%;
+	width: 100%;
+	height:100%;
+}
+
+
+.right-about{
+	position: relative;
+	float: left;
+	width: 47%;
+	height: 100%;
+	z-index: -1;
+}
+
+.right-about-1{
+	z-index: 1;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height:100%;
+}
+
+.right-about-2{
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 100%;
+	background: white;
+}
+
+.about-content-position{
+	position: absolute;
+	width: 100%;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+.about-content-position h1{
+	line-height: 0.7;
+	text-align: center;
+	font-size: 10vw;
+	text-transform: uppercase;
+	margin: 0;
+	letter-spacing: -0.35vw;
+	font-family: "Montserrat", sans-serif;
+}
+
+.about-content-position p{
+	margin-top: 4vw;
+	margin-left: 11vw;
+	margin-right: 6vw;
+	text-align: left;
+	font-weight: 300;
+	overflow: hidden;
+	font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+.underline3{
+	height: 5px;
+	width: 6vw;
+	border-radius: 50px;
+	position: absolute;
+	top: 53%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: red;
+}
+
 
 /* About section */
 .about_dec{
@@ -254,6 +418,7 @@ header{
 }
 
 .underline2{
+	border-radius: 50px;
 	position: absolute;
 	height: 5px;
 	width: 100px;

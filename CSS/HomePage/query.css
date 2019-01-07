@@ -4,7 +4,7 @@
 
 /*Phone/mobile device width*/
 @media only screen and (max-width: 480px) {
-      .overlay h1 {
+	.overlay h1 {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -16,7 +16,7 @@
       font-weight: bolder;
       letter-spacing: 2px;
       width: max-content;
-      }
+	}
       .header_title h1{
       font-family: 'Oswald', sans-serif;
       letter-spacing: 5px;
