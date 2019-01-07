@@ -1,3 +1,0 @@
-1.letter animation
-2.typing animation
-3.web layout
