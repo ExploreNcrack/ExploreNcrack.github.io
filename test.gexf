@@ -12,6 +12,9 @@
       <node id="0" label="Myriel">
         <attvalues>
           <attvalue for="modularity_class" value="1"></attvalue>
+          <viz:size value="28.685715"></viz:size>
+        <viz:position x="-266.82776" y="299.6904" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
         </attvalues>
        
       </node>
@@ -19,7 +22,9 @@
        <attvalues>
           <attvalue for="modularity_class" value="1"></attvalue>
         </attvalues>
-       
+       <viz:size value="4.0"></viz:size>
+        <viz:position x="-418.08344" y="446.8853" z="0.0"></viz:position>
+        <viz:color r="236" g="81" b="72"></viz:color>
       </node>
     </nodes>
     <edges>
