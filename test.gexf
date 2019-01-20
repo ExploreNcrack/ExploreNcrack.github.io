@@ -13,17 +13,13 @@
         <attvalues>
           <attvalue for="modularity_class" value="1"></attvalue>
         </attvalues>
-        <viz:size value="6.742859"></viz:size>
-        <viz:position x="-339.77908" y="-184.69139" z="0.0"></viz:position>
-        <viz:color r="236" g="81" b="72"></viz:color>
+       
       </node>
      <node id="1" label="Napoleon">   
        <attvalues>
           <attvalue for="modularity_class" value="1"></attvalue>
         </attvalues>
-        <viz:size value="6.742859"></viz:size>
-        <viz:position x="-339.77908" y="-184.69139" z="0.0"></viz:position>
-        <viz:color r="236" g="81" b="72"></viz:color>
+       
       </node>
     </nodes>
     <edges>
