@@ -9,7 +9,7 @@
       <attribute id="modularity_class" title="Modularity Class" type="integer"></attribute>
     </attributes>
     <nodes>
-      <node id="0" label="Myriel">
+      <node id="0" >
         <attvalues>
           <attvalue for="modularity_class" value="0"></attvalue>
         </attvalues>
