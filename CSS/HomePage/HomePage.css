@@ -253,7 +253,7 @@ header{
 }
 
 .about-content-position p{
-	margin-top: 4vw;
+	margin-top: 8vh;
 	margin-left: 11vw;
 	margin-right: 6vw;
 	text-align: left;
@@ -266,13 +266,13 @@ header{
 
 
 .underline3{
-	height: 5px;
+	height: 1vh;
 	width: 6vw;
 	border-radius: 50px;
 	position: absolute;
 	top: 53%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-60%,-50%);
 	background: red;
 }
 
