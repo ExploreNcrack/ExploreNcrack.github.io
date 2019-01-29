@@ -270,9 +270,9 @@ header{
 	width: 6vw;
 	border-radius: 50px;
 	position: absolute;
-	top: 53%;
+	top: 40%;
 	left: 50%;
-	transform: translate(-60%,-50%);
+	transform: translate(-50%,-50%);
 	background: red;
 }
 
