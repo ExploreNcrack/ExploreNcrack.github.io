@@ -235,6 +235,7 @@ header{
 
 .about-content-position{
 	position: absolute;
+	height: auto;
 	width: 100%;
 	top: 60%;
 	left: 50%;
@@ -269,8 +270,8 @@ header{
 	height: 1vh;
 	width: 6vw;
 	border-radius: 50px;
-	position: absolute;
-	top: 40%;
+	position: relative;
+	margin-top: 4vh;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	background: red;
