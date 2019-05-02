@@ -1,2 +1,0 @@
-1.about section: Who are we
-font style: o

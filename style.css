@@ -1,0 +1,92 @@
+/* making the website to be full page */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	padding: 180px 0 0 40px;
+	background-color: #252423;
+	text-decoration: none;
+}
+
+#main{
+	/* margin: 10pt; */
+	color: white;
+	font-size: 15pt;
+	font-family: monospace;
+}
+
+#tagline{
+	color: gray;
+	font-weight: 100;
+}
+
+#pow-txt{
+	display: none;
+	font-weight: 100;
+	color: #e3e3e3 !important;
+}
+
+ins{
+	text-decoration: none;
+	color: #8453E3;
+}
+
+del{
+	text-decoration: none;	
+}
+
+
+.title{
+	color:dodgerblue;
+	font-size: 18pt;
+	font-weight: 100;
+	font-family: monospace;
+	font-weight: bolder;
+}
+
+.middle{
+	/* background-color: black; */
+	width: 80%;
+	height: 50%;
+	position: absolute;
+	text-align: left;
+	top: 33%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+@media only screen and (max-width: 480px) {
+	.title{
+		font-size: 10pt;
+	}
+	#main{
+		font-size: 10pt;
+	}
+	.middle{
+		width: 100%;
+	}
+}
+
+
+
+@media only screen and (max-width: 768px) {
+	.title{
+		font-size: 13pt;
+	}
+	#main{
+		font-size: 13pt;
+	}
+	.middle{
+		width: 92%;
+	}
+}
+
+
+
+
+
+
